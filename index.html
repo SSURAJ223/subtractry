@@ -1,120 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subtractry | Precision Component Manufacturing</title>
-    <style>
-        :root {
-            --primary-blue: #0A2540;
-            --action-blue: #0066FF;
-            --action-hover: #0052CC;
-            --surface-gray: #F6F9FC;
-            --text-dark: #32325D;
-            --text-muted: #6B7C93;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; }
-        body { color: var(--text-dark); line-height: 1.6; background-color: #ffffff; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-
-        /* Navigation */
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2rem; border-bottom: 1px solid #E6EBF1; background: #fff; position: sticky; top: 0; z-index: 100; }
-        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-blue); letter-spacing: -0.5px; }
-        .logo span { color: var(--action-blue); }
-        .btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 600; text-decoration: none; cursor: pointer; transition: background 0.2s; border: none; }
-        .btn-primary { background: var(--action-blue); color: white; }
-        .btn-primary:hover { background: var(--action-hover); }
-
-        /* Hero */
-        .hero { background-color: var(--surface-gray); padding: 6rem 0; text-align: center; border-bottom: 1px solid #E6EBF1; }
-        .hero h1 { font-size: 3rem; color: var(--primary-blue); margin-bottom: 1.5rem; line-height: 1.2; letter-spacing: -1px; max-width: 800px; margin-inline: auto; }
-        .hero p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; max-width: 600px; margin-inline: auto; }
-
-        /* Capabilities Matrix */
-        .capabilities { padding: 5rem 0; }
-        .section-title { text-align: center; font-size: 2rem; color: var(--primary-blue); margin-bottom: 3rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .card { padding: 2.5rem; border: 1px solid #E6EBF1; border-radius: 8px; background: #fff; transition: box-shadow 0.3s; }
-        .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-color: var(--action-blue); }
-        .card h3 { font-size: 1.4rem; color: var(--primary-blue); margin-bottom: 1rem; }
-        .card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
-        .specs { list-style: none; border-top: 1px solid #E6EBF1; padding-top: 1rem; }
-        .specs li { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; }
-        .specs span { font-weight: 600; color: var(--text-dark); }
-
-        /* CTA */
-        .cta { background: var(--primary-blue); color: white; text-align: center; padding: 5rem 0; }
-        .cta h2 { font-size: 2.5rem; margin-bottom: 1.5rem; }
-        .cta p { margin-bottom: 2rem; color: #A0B2C6; }
-
-        /* Footer */
-        footer { padding: 2rem 0; text-align: center; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid #E6EBF1; }
-    </style>
-</head>
-<body>
-
-    <nav>
-        <div class="logo">Subtract<span>ry</span></div>
-        <div>
-            <a href="mailto:founder@subtractry.com" class="btn btn-primary">Get an Instant Quote</a>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <div class="container">
-            <h1>On-Demand Precision Component Manufacturing.</h1>
-            <p>Access a strictly vetted network of CNC machining and fabrication facilities. Upload your CAD data for expert engineering review and rapid production.</p>
-            <a href="mailto:founder@subtractry.com" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">Upload 3D CAD (.STEP / .STL)</a>
-        </div>
-    </header>
-
-    <section class="capabilities container">
-        <h2 class="section-title">Industrial Capabilities</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>CNC Milling (3, 4 & 5-Axis)</h3>
-                <p>High-precision milling for complex geometries, aerospace components, and tight-tolerance industrial hardware.</p>
-                <ul class="specs">
-                    <li>Standard Tolerance <span>&plusmn; 0.005"</span></li>
-                    <li>Precision Tolerance <span>&plusmn; 0.001"</span></li>
-                    <li>Materials <span>Alum, SS, Titanium</span></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Precision CNC Turning</h3>
-                <p>Rapid production of concentric parts, shafts, and custom fittings using advanced lathes with live tooling.</p>
-                <ul class="specs">
-                    <li>Max Diameter <span>18 inches</span></li>
-                    <li>Precision Tolerance <span>&plusmn; 0.0005"</span></li>
-                    <li>Finishes <span>As Machined, Anodized</span></li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Sheet Metal Fabrication</h3>
-                <p>Laser cutting, bending, and welding for enclosures, brackets, and structural assemblies.</p>
-                <ul class="specs">
-                    <li>Cutting <span>Laser, Plasma, Waterjet</span></li>
-                    <li>Forming <span>Press Brake Bending</span></li>
-                    <li>Finishes <span>Powder Coat, Plating</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to manufacture?</h2>
-            <p>Bypass legacy supply chain delays. Email your CAD files directly to our engineering team.</p>
-            <a href="mailto:founder@subtractry.com" class="btn btn-primary" style="background: white; color: var(--primary-blue);">Start Your Quote</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Subtractry. ISO 9001 aligned manufacturing network.</p>
-        </div>
-    </footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
+
